@@ -1,0 +1,118 @@
+body {
+   margin: 0;
+   padding: 0;
+   background: #e0e0e0;
+}
+
+ul {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+ul li {
+   list-style: none;
+   margin: 0 40px;
+}
+
+ul li a .fa {
+   font-size: 40px;
+   color: #262626;
+   line-height: 80px;
+   transition: 0.5s;
+}
+
+ul li a {
+   position: relative;
+   display: block;
+   width: 80px;
+   height: 80px;
+   background: #fff;
+   text-align: center;
+   transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+   transition: 0.5s;
+   box-shadow: -20px 20px 10px rgba(0,0,0,0.5);
+}
+
+ul li a:before {
+   content: '';
+   position: absolute;
+   top: 10px;
+   left: -20px;
+   height: 100%;
+   width: 20px;
+   background: #b1b1b1;
+   transition: 0.5s;
+   transform: rotate(0deg) skewY(-45deg);
+}
+
+ul li a:after {
+   content: '';
+   position: absolute;
+   bottom: -20px;
+   left: -10px;
+   height: 20px;
+   width: 100%;
+   background: #c7c7c7;
+   transition: 0.5s;
+   transform: rotate(0deg) skewX(-45deg);
+}
+
+ul li a:hover{
+   transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+   box-shadow: -50px 50px 15px rgba(0,0,0,0.5);
+}
+
+ul li:hover .fa {
+   color: #fff;
+}
+
+
+ul li:hover:nth-child(1) a {
+   background: #211f1f;
+}
+ul li:hover:nth-child(1) a:before {
+   background: #0d0c0c;
+}
+ul li:hover:nth-child(1) a:after {
+   background: #2f2d2d;
+}
+
+
+ul li:hover:nth-child(2) a {
+   background: #55acee;
+}
+ul li:hover:nth-child(2) a:before {
+   background: #2e99ea;
+}
+ul li:hover:nth-child(2) a:after {
+   background: #74bbf1;
+}
+
+
+ul li:hover:nth-child(3) a {
+   background: #ff5700;
+}
+ul li:hover:nth-child(3) a:before {
+   background: #e64d00;
+}
+ul li:hover:nth-child(3) a:after {
+   background: #ff6d24;
+}
+
+
+ul li:hover:nth-child(4) a {
+   background: #0088cc;
+}
+ul li:hover:nth-child(4) a:before {
+   background: #0074ad;
+}
+ul li:hover:nth-child(4) a:after {
+   background: #00a0f0;
+}
+
+
